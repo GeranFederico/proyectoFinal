@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:ital,wght@1,300&family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&family=Poppins:ital,wght@1,300&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.encabezado{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(208, 9, 9);
+    font-size: 1.5em;
+}
+
+h1 {
+    padding: 1em;
+    background-color: rgb(1, 6, 25);
+    background: radial-gradient(circle, rgb(1, 6, 25) 21%, rgb(14, 34, 109) 41%, rgb(14, 34, 109) 54%, rgba(0, 1, 15, 0.8533788515) 86%);
+    color: white;
+}
+
+.noticias {
+    margin-top: 3em;
+}
+.partidos {
+    margin-top: 3em;
+}
+.noticiasTitulo{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.noticiasTitulo h3{
+    color: rgb(208, 9, 9);
+}
+.noticiasParrafo{
+    border-top: 2px solid black;
+    padding: 1em;
+    text-align: center;
+    margin: 10px auto;
+}
+.noticiasInfo {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.noticiasInfo p {
+    margin-top: 2em;
+    font-size: 12px;
+}
+
+.noticiasParrafo img {
+    width: 100px;
+    height: 100px;
+}
+
+.partidosTitulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;    
+}
+.partidosTitulo h3{
+    color: rgb(208, 9, 9);
+}
+
+.vs{
+    margin: auto;
+}
+
+.vs img{
+    margin: auto;
+    width: 360px;
+    height: 445px;
+    padding: 1em;
+}
+
+footer{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(208, 9, 9);
+    padding: 3em;
+    margin-top: 1.5em;
+    margin-bottom: 0;
+    color: white;
+    font-size: 2em;
+}
+
+.redes img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1em;
+}
+.derechos p{
+    font-size: 12px;
+}
+/* Mobile First 0px-600px*/
+/* Elementos de la grilla*/
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.container {
+    grid-area: portada;
+}
+
+.noticias {
+    grid-area: noticias;
+}
+
+.partidos {
+    grid-area: partidos;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.grilla {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "header" 
+    "nav" 
+    "portada" 
+    "noticias" 
+    "partidos" 
+    "footer";
+}
+
+/* Estilos club */
+
+.historia {
+    font-size: 20px;
+    margin: 1em;
+    border-bottom: 2px solid black;
+    grid-area: historia;
+}
+
+.actualidad {
+    font-size: 17px;
+    margin: 1em;
+    border-bottom: 2px solid black;
+    grid-area: actualidad;
+}
+.actualidad h2 {
+    font-size: 25px;
+    color: rgb(14, 34, 109);
+}
+
+.uniforme {
+    font-size: 17px;
+    margin: 1em;
+    grid-area: uniforme;
+}
+.uniforme h2 {
+    font-size: 25px;
+    color: rgb(14, 34, 109);
+}
+
+.grillaClub {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "historia"
+    "actualidad"
+    "uniforme"
+    "footer";
+}
+
+/* Estilos de Galeria*/
+
+nav {
+    grid-area: nav;
+}
+.tituloGaleria {
+    font-family: 'Montserrat', sans-serif;
+    grid-area: titulo;
+    padding: 1em;
+    font-size: 2em;
+}
+
+.galeriaGrid {
+    grid-area: galeria;
+}
+
+.grillaGaleria {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "titulo"
+    "galeria"
+    "footer";
+}
+
+.galeriaPadre {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    justify-items: center;
+}
+
+.galeriaPadre img {
+    border: 5px solid #2F38B0;
+    width: 400px;
+    height: 400px;
+    margin-top: 1em;
+}
+
+/* Estilos Contacto */
+.mapa {
+    margin: auto;
+    padding: 1em;
+    grid-area: mapa;
+    height: 425px;
+    width: 425px;
+}
+
+.contacto {
+    padding: 1em;
+    grid-area: contacto;
+    font-size: 2em;
+}
+
+.formulario {
+    font-size: 1.5em;
+    padding: 1em;
+    margin-bottom: 2em;
+    grid-area: formulario;
+    border: 2px solid black;
+}
+
+.grillaContacto {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "contacto"
+    "formulario"
+    "mapa"
+    "footer";
+}
+
+/* Estilo de Futbol */
+
+.torneo {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+.torneoTabla {
+    
+    padding-bottom: 10em;
+    border-bottom: 3px solid black;
+}
+.torneoPartidos {
+    padding-top: 6em;
+    padding-bottom: 7em;
+}
+.busquedaJugadores img {
+    width: 450px;
+    height: 200px;
+}
+.torneoTabla h2 {
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.torneoPartidos h2 {
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.anuncio {
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-top: 2em;
+}
+.fefi {
+    padding: 2em;
+}
+
+@media (min-width: 600px) {
+    .grilla {
+        margin: 0;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas: 
+        "header   header"
+        "nav      nav"
+        "portada  portada"
+        "noticias partidos"
+        "footer   footer"
+        ;
+    }
+
+    .container img {
+        width: 550px;
+        height: 350px;
+    }
+    .redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .derechos {
+        font-size: 1em;
+    }
+    .noticias {
+        padding: 2em;
+    }
+    .noticiasInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .noticiasInfo p{
+        margin-top: 1em;
+    }
+    .noticiasTitulo {
+        align-items: center;
+    }
+    .noticiasTitulo h3 {
+        font-size: 13px;
+    }
+    .noticias h4 {
+        padding-top: 2px;
+    }
+    
+    .partidos {
+        margin-top: 2em;
+        padding: 1em;
+    }
+    .partidosTitulo{
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+
+    }
+    
+    .partidos h3 {
+        padding-top: 3em;
+        font-size: 13px;
+    }
+    .partidos img {
+        width: 100px;
+        height: 100px;
+    }
+    .vs {
+        height: 0;
+    }
+    
+    .vs img{
+        width: 290px;
+        height: 398px;
+        padding-top: 2.5em;
+    }
+    .noticiasParrafo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Estilos de Galeria*/
+    .galeriaPadre img {
+        margin-top: 10px;
+        width: 550px;
+        height: 550px;
+    }
+}
+
+@media (min-width: 768px) {
+    .grilla {
+        margin: 0;
+        grid-template-areas: 
+        "header          header"
+        "nav             nav"
+        "portada         portada"
+        "noticias        partidos"
+        "footer          footer";
+        grid-template-columns: 2fr 2fr;
+        ;
+    }
+    .container img {
+        width: 700px;
+        height: 450px;
+    }
+    .partidos {
+        margin-top: 1em;
+    }
+    
+    .partidos h3 {
+        font-size: 1.5em;
+        padding-top: 2.5em;
+    }
+    .noticiasTitulo {
+        padding-bottom: 2em;
+    }
+    .partidos h2 {
+        padding-top: 1em;
+    }
+    .noticiasParrafo {
+        padding: 10px;
+    }
+    .noticiasTitulo {
+        padding-bottom: 2em;
+    }
+    .vs {
+        padding: 1em;
+        height: 0;
+    }
+    .vs img {
+        padding-left: 2em;
+    }
+
+    /* Estilos de Galeria */
+
+    .galeriaPadre {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 10px;
+    }
+    .galeriaPadre img {
+        margin-top: 10px;
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Estilo Contacto */
+
+    .grillaContacto {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: 
+        "nav      nav"
+        "contacto mapa"
+        "formulario mapa"
+        "footer   footer";
+    }
+
+    /* Estilo de Futbol */
+
+.torneo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+}
+.torneoPartidos {
+    padding: 2em;
+    border: 3px solid rgb(208, 9, 9);
+}
+.torneoTabla {
+    padding: 2em;
+    border-bottom: none;
+    border: 3px solid rgb(208, 9, 9);
+}
+.torneoTabla img {
+    width: 350px;
+    height: 586px;
+
+}
+.torneoPartidos img{
+    width: 350px;
+    height: 586px;
+}
+.busquedaJugadores {
+    margin-top: 5em;
+}
+.busquedaJugadores img {
+    width: 600px;
+    height: 350px;
+}
+.torneoTabla h2 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.torneoPartidos h2 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.anuncio {
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-top: 2em;
+}
+.fefi {
+    padding: 2em;
+}
+}
+
+@media (min-width: 1024px) {
+    .grilla {
+        display: grid;
+        grid-template-areas: 
+        "header        header"
+        "nav           nav"
+        "portada       portada"
+        "noticias      partidos"
+        "footer        footer";
+        grid-template-columns: 1.5fr 2fr;
+    }
+    .container img {
+        width: 1000px;
+        height: 500px;
+    }
+    .vs img {
+        width: 390px;
+        height: 520px;
+    }
+
+    footer{
+        margin-top: 8em;
+        font-size: 2em;
+    }
+
+    /* Estilo de Galeria*/
+
+    .galeriaPadre {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        gap: 15px;
+    }
+    .galeriaPadre img {
+        margin-top: 10px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    /* Estilo de Contacto */
+    .grillaContacto {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas: 
+        "nav       nav"
+        "mapa      contacto"
+        "mapa      formulario"
+        "footer    footer";
+    }
+    .mapa {
+        padding-top: 3em;
+        background-color: rgb(1, 6, 25);
+        background: radial-gradient(circle, rgb(1, 6, 25) 21%, rgb(14, 34, 109) 41%, rgb(14, 34, 109) 54%, rgba(0, 1, 15, 0.8533788515) 86%);
+        border: 2px solid rgb(208, 9, 9);
+    }
+
+    /* Estilo Club */
+    .grillaClub {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas: 
+        "nav         nav"
+        "historia    historia"
+        "actualidad  uniforme"
+        "footer      footer";
+    }
+    .actualidad {
+        border-right: 2px solid black;
+        border-bottom: none;
+        padding-right: 3em;
+    }
+
+    /* Estilo de Futbol */
+    .anuncioBusqueda {
+        display: flex;
+        flex-direction: row;
+    }
+    .busquedaJugadores {
+        padding-left: 10em;
+    }
+}
