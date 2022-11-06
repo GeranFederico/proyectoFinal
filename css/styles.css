@@ -266,8 +266,8 @@ nav {
 }
 
 .busquedaJugadores img {
-  width: 450px;
   height: 200px;
+  width: 450px;
 }
 
 .anuncio {
@@ -288,8 +288,8 @@ nav {
     grid-template-areas: "header   header" "nav      nav" "portada  portada" "noticias partidos" "footer   footer";
   }
   .container img {
-    width: 550px;
     height: 350px;
+    width: 550px;
   }
   .redes {
     display: flex;
@@ -333,20 +333,20 @@ nav {
     font-size: 13px;
   }
   .partidos img {
-    width: 100px;
     height: 100px;
+    width: 100px;
   }
   .vs {
     height: 0;
   }
   .vs img {
-    width: 290px;
     height: 398px;
+    width: 290px;
     padding-top: 2.5em;
   }
   .noticiasParrafo img {
-    width: 200px;
     height: 200px;
+    width: 200px;
   }
   /* Estilos de Galeria*/
   .galeriaPadre img {
@@ -362,8 +362,8 @@ nav {
     grid-template-columns: 2fr 2fr;
   }
   .container img {
-    width: 700px;
     height: 450px;
+    width: 700px;
   }
   .partidos {
     margin-top: 1em;
@@ -425,19 +425,19 @@ nav {
     border: 3px solid rgb(208, 9, 9);
   }
   .torneoTabla img {
-    width: 350px;
     height: 586px;
+    width: 350px;
   }
   .torneoPartidos img {
-    width: 350px;
     height: 586px;
+    width: 350px;
   }
   .busquedaJugadores {
     margin-top: 5em;
   }
   .busquedaJugadores img {
-    width: 600px;
     height: 350px;
+    width: 600px;
   }
   .torneoTabla h2 {
     font-size: 20px;
@@ -464,12 +464,12 @@ nav {
     grid-template-columns: 1.5fr 2fr;
   }
   .container img {
-    width: 1000px;
     height: 500px;
+    width: 1000px;
   }
   .vs img {
-    width: 390px;
     height: 520px;
+    width: 390px;
   }
   footer {
     margin-top: 8em;

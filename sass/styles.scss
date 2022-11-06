@@ -3,7 +3,10 @@
 @import "index";
 @import "footer";
 
-
+@mixin size ($width, $height){
+    height: $height;
+    width: $width;
+}
 
 /* Mobile First 0px-600px*/
 /* Elementos de la grilla*/
@@ -167,7 +170,6 @@ nav {
     padding: 2em;
 }
 .torneoTabla {
-    
     padding-bottom: 10em;
     border-bottom: 3px solid black;
     h2 {
@@ -185,8 +187,7 @@ nav {
     }
 }
 .busquedaJugadores img {
-    width: 450px;
-    height: 200px;
+    @include size(450px,200px);
 }
 
 .anuncio {
@@ -213,8 +214,7 @@ nav {
     }
 
     .container img {
-        width: 550px;
-        height: 350px;
+        @include size(550px,350px);
     }
     .redes {
         display: flex;
@@ -225,7 +225,7 @@ nav {
         font-size: 1em;
     }
     .noticias {
-        padding: 2em;
+        @extend .fefi;
     }
     .noticiasInfo {
         display: flex;
@@ -261,21 +261,18 @@ nav {
         font-size: 13px;
     }
     .partidos img {
-        width: 100px;
-        height: 100px;
+        @include size(100px,100px);
     }
     .vs {
         height: 0;
     }
     
     .vs img{
-        width: 290px;
-        height: 398px;
+        @include size(290px,398px);
         padding-top: 2.5em;
     }
     .noticiasParrafo img {
-        width: 200px;
-        height: 200px;
+        @include size(200px,200px);
     }
 
     /* Estilos de Galeria*/
@@ -299,8 +296,7 @@ nav {
         ;
     }
     .container img {
-        width: 700px;
-        height: 450px;
+        @include size(700px,450px);
     }
     .partidos {
         margin-top: 1em;
@@ -373,20 +369,17 @@ nav {
     border: 3px solid rgb(208, 9, 9);
 }
 .torneoTabla img {
-    width: 350px;
-    height: 586px;
+    @include size(350px,586px);
 
 }
 .torneoPartidos img{
-    width: 350px;
-    height: 586px;
+    @include size(350px,586px);
 }
 .busquedaJugadores {
     margin-top: 5em;
 }
 .busquedaJugadores img {
-    width: 600px;
-    height: 350px;
+    @include size(600px,350px);
 }
 .torneoTabla h2 {
     font-size: 20px;
@@ -421,12 +414,10 @@ nav {
         grid-template-columns: 1.5fr 2fr;
     }
     .container img {
-        width: 1000px;
-        height: 500px;
+        @include size(1000px,500px);
     }
     .vs img {
-        width: 390px;
-        height: 520px;
+        @include size(390px,520px);
     }
 
     footer{
