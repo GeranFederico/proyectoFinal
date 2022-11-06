@@ -155,7 +155,6 @@ footer {
   border-bottom: 2px solid black;
   grid-area: actualidad;
 }
-
 .actualidad h2 {
   font-size: 25px;
   color: rgb(14, 34, 109);
@@ -166,7 +165,6 @@ footer {
   margin: 1em;
   grid-area: uniforme;
 }
-
 .uniforme h2 {
   font-size: 25px;
   color: rgb(14, 34, 109);
@@ -206,7 +204,6 @@ nav {
   gap: 10px;
   justify-items: center;
 }
-
 .galeriaPadre img {
   border: 5px solid #2F38B0;
   width: 400px;
@@ -254,25 +251,23 @@ nav {
   padding-bottom: 10em;
   border-bottom: 3px solid black;
 }
-
-.torneoPartidos {
-  padding-top: 6em;
-  padding-bottom: 7em;
-}
-
-.busquedaJugadores img {
-  width: 450px;
-  height: 200px;
-}
-
 .torneoTabla h2 {
   font-size: 3em;
   font-family: "Montserrat", sans-serif;
 }
 
+.torneoPartidos {
+  padding-top: 6em;
+  padding-bottom: 7em;
+}
 .torneoPartidos h2 {
   font-size: 3em;
   font-family: "Montserrat", sans-serif;
+}
+
+.busquedaJugadores img {
+  width: 450px;
+  height: 200px;
 }
 
 .anuncio {
