@@ -1,36 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:ital,wght@1,300&family=Roboto:wght@300&display=swap');
+@import "fuentes";
+@import "general";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&family=Poppins:ital,wght@1,300&family=Roboto:wght@300&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-html{
-    font-size: 62.5%;
-}
-
-body{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.encabezado{
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgb(208, 9, 9);
-    font-size: 1.5em;
-}
-
-h1 {
-    padding: 1em;
-    background-color: rgb(1, 6, 25);
-    background: radial-gradient(circle, rgb(1, 6, 25) 21%, rgb(14, 34, 109) 41%, rgb(14, 34, 109) 54%, rgba(0, 1, 15, 0.8533788515) 86%);
-    color: white;
-}
 
 .noticias {
     margin-top: 3em;
