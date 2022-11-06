@@ -1,0 +1,54 @@
+.noticias {
+    margin-top: 3em;
+}
+.partidos {
+    margin-top: 3em;
+}
+.noticiasTitulo{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    h3{
+        color: rgb(208, 9, 9);
+    }
+}
+
+.noticiasParrafo{
+    border-top: 2px solid black;
+    padding: 1em;
+    text-align: center;
+    margin: 10px auto;
+}
+.noticiasInfo {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.noticiasInfo p {
+    margin-top: 2em;
+    font-size: 12px;
+}
+
+.noticiasParrafo img {
+    width: 100px;
+    height: 100px;
+}
+
+.partidosTitulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    h3{
+        color: rgb(208, 9, 9);
+    }
+}
+
+.vs{
+    margin: auto;
+    img{
+        margin: auto;
+        width: 360px;
+        height: 445px;
+        padding: 1em;
+    }
+}

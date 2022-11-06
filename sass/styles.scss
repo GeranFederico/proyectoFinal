@@ -1,80 +1,10 @@
 @import "fuentes";
 @import "general";
+@import "index";
+@import "footer";
 
 
-.noticias {
-    margin-top: 3em;
-}
-.partidos {
-    margin-top: 3em;
-}
-.noticiasTitulo{
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.noticiasTitulo h3{
-    color: rgb(208, 9, 9);
-}
-.noticiasParrafo{
-    border-top: 2px solid black;
-    padding: 1em;
-    text-align: center;
-    margin: 10px auto;
-}
-.noticiasInfo {
-    display: flex;
-    flex-direction: row-reverse;
-}
-.noticiasInfo p {
-    margin-top: 2em;
-    font-size: 12px;
-}
 
-.noticiasParrafo img {
-    width: 100px;
-    height: 100px;
-}
-
-.partidosTitulo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;    
-}
-.partidosTitulo h3{
-    color: rgb(208, 9, 9);
-}
-
-.vs{
-    margin: auto;
-}
-
-.vs img{
-    margin: auto;
-    width: 360px;
-    height: 445px;
-    padding: 1em;
-}
-
-footer{
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgb(208, 9, 9);
-    padding: 3em;
-    margin-top: 1.5em;
-    margin-bottom: 0;
-    color: white;
-    font-size: 2em;
-}
-
-.redes img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 1em;
-}
-.derechos p{
-    font-size: 12px;
-}
 /* Mobile First 0px-600px*/
 /* Elementos de la grilla*/
 

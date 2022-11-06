@@ -44,7 +44,6 @@ h1 {
   flex-direction: row;
   justify-content: space-evenly;
 }
-
 .noticiasTitulo h3 {
   color: rgb(208, 9, 9);
 }
@@ -76,7 +75,6 @@ h1 {
   flex-direction: row;
   justify-content: space-evenly;
 }
-
 .partidosTitulo h3 {
   color: rgb(208, 9, 9);
 }
@@ -84,7 +82,6 @@ h1 {
 .vs {
   margin: auto;
 }
-
 .vs img {
   margin: auto;
   width: 360px;
